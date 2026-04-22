@@ -12,6 +12,6 @@
 
 - name: Install default and specific packages
   ansible.builtin.apt:
-    pkg: {{ base_package_install__default_packages + base_package_install__specific_packages }}
+    pkg: "{{ base_package_install__default_packages + base_package_install__specific_packages }}"
     state: present
   become: true
