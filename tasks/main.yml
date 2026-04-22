@@ -1,3 +1,17 @@
-#SPDX-License-Identifier: MIT-0
 ---
-# tasks file for base-package-install
+- name: Update cache
+  ansible.builtin.apt:
+    update_cache: true
+  become: true
+
+- name: Upgrade all pkg
+  ansible.builtin.apt:
+    name: "*"
+    state: latest
+  become: true
+
+- name: Install default and specific packages
+  ansible.builtin.apt:
+    pkg: {{ base_package_install__default_packages + base_package_install__specific_packages }}
+    state: present
+  become: true

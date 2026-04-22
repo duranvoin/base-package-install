@@ -1,3 +1,14 @@
-#SPDX-License-Identifier: MIT-0
 ---
-# defaults file for base-package-install
+base_package_install__default_packages:
+  - curl
+  - nfs-common
+  - nano
+  - iputils-arping
+  - iputils-clockdiff
+  - iputils-ping
+  - iputils-tracepath
+  - wget
+  - smartmontools
+  - htop
+
+base_package_install__specific_packages: # Add packages in group_vars or on hosts
