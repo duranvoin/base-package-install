@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  author: Kiselev Mikhail 
+  author: Kiselev Mikhail (duranvoin)
   description: Role for install packages on host
   company: Ozon Tech
   license: license (GPL-2.0-or-later, MIT, etc)
