@@ -1,4 +1,4 @@
-#SPDX-License-Identifier: MIT-0
+---
 galaxy_info:
   author: Kiselev Mikhail 
   description: Role for install packages on host
